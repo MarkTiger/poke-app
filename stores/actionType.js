@@ -1,0 +1,2 @@
+export const ISLOADING_SET = 'ISLOADING/SET';
+export const POKEMONS_SET = 'POKEMONS/SET';
