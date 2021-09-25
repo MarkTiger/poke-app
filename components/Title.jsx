@@ -1,14 +1,19 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import capitalize from '../helpers/capitalize';
 
-export default function Title({ title }) {
-  return <Text style={styles.textTitle}>{title}</Text>;
+export default function Title({ title, isLight }) {
+  return (
+    <Text style={[styles.textTitle, { color: isLight ? 'white' : '#555' }]}>
+      {capitalize(title)}
+    </Text>
+  );
 }
 
 const styles = StyleSheet.create({
   textTitle: {
     fontWeight: 'bold',
-    fontSize: 30,
+    fontSize: 40,
     paddingVertical: 20,
   },
 });
