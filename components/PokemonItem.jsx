@@ -24,7 +24,7 @@ export default function PokemonItem({ pokemon }) {
     >
       <TouchableHighlight
         underlayColor="#11111130"
-        onPress={() => navigation.navigate('Detail')}
+        onPress={() => navigation.navigate('Detail', pokemon)}
         style={styles.touch}
       >
         <View style={styles.fullWidthHeight}>
